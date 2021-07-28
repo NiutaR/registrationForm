@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.js">
+    <title>Register With Us</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h1>Register</h1>
+            <form class="form form__validate">
+                <div class="form__group">
+                    <label for="firstName" class="form__label">
+                        <span class="field-label">First name</span>
+                    </label>
+                    <input type="text" name="firstName" id="firstName" class="form__control" minlength="2" required />
+                </div>
+                <div class="form__group">
+                    <label for="lastName" class="form__label">
+                        <span class="field-label">Last name</span>
+                    </label>
+                    <input type="text" name="lastName" id="lastName" class="form__control" minlength="2" required />
+                </div>
+                <div class="form__group">
+                    <label for="emailAddress" class="form__label">
+                        <span class="field-label">Email address</span>
+                    </label>
+                    <input type="email" name="emailAddress" id="emailAddress" class="form__control" required />
+                </div>
+                <div class="form__group">
+                    <label for="password" class="form__label">
+                        <span class="field-label">Password</span>
+                        <span class="field-hint">
+                            Must contain 8+ characters with at least 1 number, 1 lowercase
+                            letter and 1 uppercase letter
+                        </span>
+                    </label>
+                    <input type="password" name="password" id="password" class="form__control" minlength="8"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Please include at least 1 number, 1 lowercase letter and 1 upper case letter. Password length must be greater or equal to 8"
+                        required />
+                    <section class="password-reveal">
+                        <input type="checkbox" name="revealPassword" id="revealPassword"
+                            class="password-reveal__field" />
+                        <label for="revealPassword">
+                            <span class="field-label" id="revealPasswordLabel">
+                                Show password
+                            </span>
+                        </label>
+                    </section>
+                </div>
+                <div class="form__group form__group--submit">
+                    <input type="submit" value="Register" class="form__control form__control--submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+body {
+    font-size: 16px;
+    background: rgb(193, 192, 194);
+    background: radial-gradient(circle, rgb(199, 197, 201) 0%, rgb(152, 154, 158) 44%, rgba(27, 44, 63, 1) 86%);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+.c
